@@ -48,5 +48,8 @@ export default class Header extends Vue {
       @apply font-bold;
     }
   }
+  .header__logo img {
+    max-width: 8rem;
+  }
 }
 </style>
