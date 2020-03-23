@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-netlifycms",
+  "name": "nuxt-netlify-bluise-atac",
   "version": "0.0.1",
-  "description": "Yo",
-  "author": "Gomah",
+  "description": "Atac Website",
+  "author": "Diogo Cardoso Fernandes",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts -o",

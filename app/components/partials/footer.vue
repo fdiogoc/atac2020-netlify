@@ -1,7 +1,8 @@
 <template>
   <footer class="footer -mx-4 md:mx-0">
     <div class="container mx-auto pb-6 flex justify-center">
-      © 2020 Diogo Fernandes
+      <p class="text-white mr-6 mt-1 align-middle inline-block">© 2020 Diogo Fernandes</p>
+
       <a href="https://github.com/fdiogoc/atac2020-netlify">
         <svg
           baseProfile="tiny"
