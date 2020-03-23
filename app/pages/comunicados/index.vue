@@ -2,19 +2,13 @@
   <section class="comunicados">
     <div class="py-8 md:py-16 text-center">
       <h1 class="text-lg md:text-xl lg:text-4xl xl:text-6xl">Comunicados</h1>
-      <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl">
-        Slow-carb messenger bag mlkshk fingerstache four dollar toast.
-      </h2>
+      <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl"></h2>
     </div>
 
     <div class="flex flex-wrap md:-mx-4 pb-20">
       <div v-for="(post, index) in posts" :key="index" class="w-full md:w-1/2 my-4 md:px-4">
         <div class="post">
           <nuxt-link :to="`/comunicados/${post.slug}`">
-            <img
-              class="w-full"
-              :src="post.featuredImage || 'https://source.unsplash.com/random/640x340'"
-            />
             <div class="p-6 bg-white">
               <h2 class="text-2xl mb-2">{{ post.title }}</h2>
 
@@ -22,7 +16,7 @@
                 {{ post.excerpt }}
               </p>
 
-              <h6 class="text-blue-600 mt-4 font-medium">Read more</h6>
+              <h6 class="text-blue-600 mt-4 font-medium">Ler Mais</h6>
             </div>
           </nuxt-link>
         </div>
