@@ -33,17 +33,17 @@ import { MetaInfo } from 'vue-meta';
 
   head(): MetaInfo {
     return {
-      title: this.comunicados.title,
+      title: this.post.title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.comunicados.seoDescription,
+          content: this.post.seoDescription,
         },
         {
           hid: 'og:image',
           name: 'og:image',
-          content: this.comunicados.seoMetaImage,
+          content: this.post.seoMetaImage,
         },
       ],
     };
