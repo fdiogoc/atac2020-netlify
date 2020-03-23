@@ -47,7 +47,7 @@
                   <textarea
                     class="form-textarea mt-1 block w-full focus:outline-none"
                     rows="3"
-                    placeholder="Como podemos ajudar?"
+                    placeholder="."
                   ></textarea>
                 </label>
               </div>
@@ -62,9 +62,6 @@
             </div>
           </form>
         </div>
-      </div>
-      <div class="flex flex-col w-full xl:w-2/5">
-        <img class="rounded shadow-xl" src="https://source.unsplash.com/random/720x400" />
       </div>
     </div>
   </section>
