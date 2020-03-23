@@ -4,7 +4,7 @@
       <div class="flex flex-col w-full xl:w-5/5 justify-center lg:items-start overflow-y-hidden">
         <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
-        <div class="mb-12 xl:mb-0">
+        <div class="mb-12 xl:mb-0 rounded border-gray-200 border-2 bg-gray-100">
           <h4 v-if="isSignedUp">Obrigado, logo entraremos em contato.</h4>
 
           <form
@@ -47,7 +47,7 @@
                   <textarea
                     class="form-textarea mt-1 block w-full focus:outline-none"
                     rows="3"
-                    placeholder="."
+                    placeholder="Digite sua mensagem."
                   ></textarea>
                 </label>
               </div>
