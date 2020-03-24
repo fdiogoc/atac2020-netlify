@@ -74,7 +74,7 @@ const nuxtConfig: Configuration = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit', '@nuxtjs/onesignal'],
 
   purgeCSS: {
     whitelist: [/.*-(enter|enter-active|enter-to|leave|leave-active|leave-to)/],
@@ -104,14 +104,12 @@ const nuxtConfig: Configuration = {
     ],
   },
   oneSignal: {
-    cdn: true,
     init: {
       appId: '3bafad87-66dc-411a-8551-f4811bda77da',
       allowLocalhostAsSecureOrigin: true,
       welcomeNotification: {
         disable: false,
       },
-      OneSignalSDK: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js',
     },
   },
 
