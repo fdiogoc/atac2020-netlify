@@ -107,9 +107,6 @@ const nuxtConfig: Configuration = {
     init: {
       appId: process.env.ONESIGNAL_API_KEY,
       allowLocalhostAsSecureOrigin: true,
-      welcomeNotification: {
-        disable: false,
-      },
     },
   },
 
