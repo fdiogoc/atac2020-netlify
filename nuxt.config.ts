@@ -109,7 +109,7 @@ const nuxtConfig: Configuration = {
       appId: '3bafad87-66dc-411a-8551-f4811bda77da',
       allowLocalhostAsSecureOrigin: true,
       welcomeNotification: {
-        disable: true,
+        disable: false,
       },
       OneSignalSDK: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js',
     },
