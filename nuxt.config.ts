@@ -103,25 +103,23 @@ const nuxtConfig: Configuration = {
       },
     ],
   },
-},
-
   pwa: {
     icon: {
       iconSrc: `app/static${settings.icon}`,
     },
   },
 
-manifest: {
-  name: manifest.name,
+  manifest: {
+    name: manifest.name,
     short_name: manifest.shortName,
-      description: manifest.description,
-        theme_color: manifest.themeColor,
-          background_color: manifest.backgroundColor,
-            lang: manifest.lang || 'en',
+    description: manifest.description,
+    theme_color: manifest.themeColor,
+    background_color: manifest.backgroundColor,
+    lang: manifest.lang || 'en',
   },
 
-meta: {
-  ogTitle: false,
+  meta: {
+    ogTitle: false,
     ogDescription: false,
   },
 
@@ -129,8 +127,8 @@ meta: {
   // also provide a <link rel="modulepreload"> for the modern bundle.
   // Every browser that understands the module type will load the modern bundle while older browsers fall back to the legacy (transpiled) one.
   ...(process.env.NODE_ENV === 'production' && {
-  modern: 'client',
-}),
+    modern: 'client',
+  }),
 
   buildModules: [
     [
@@ -144,50 +142,50 @@ meta: {
     '@nuxtjs/tailwindcss',
   ],
 
-    build: {
-  html: {
-    minify: {
-      removeOptionalTags: false,
+  build: {
+    html: {
+      minify: {
+        removeOptionalTags: false,
         collapseWhitespace: true,
-          decodeEntities: true,
+        decodeEntities: true,
 
-            // CSS & JS are already optimised with TerserWebpack & OptimizeCSSAssetsPlugin
-            minifyCSS: false,
-              minifyJS: false,
-                processConditionalComments: true,
-                  removeEmptyAttributes: true,
-                    removeRedundantAttributes: true,
-                      trimCustomFragments: true,
-                        useShortDoctype: true,
+        // CSS & JS are already optimised with TerserWebpack & OptimizeCSSAssetsPlugin
+        minifyCSS: false,
+        minifyJS: false,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
       },
-  },
+    },
 
-  publicPath: process.env.npm_lifecycle_event === 'generate' ? '/pwa/' : '/_nuxt/',
+    publicPath: process.env.npm_lifecycle_event === 'generate' ? '/pwa/' : '/_nuxt/',
 
     devtools: process.env.NODE_ENV !== 'production',
 
-      optimization: {
-    splitChunks: {
-      name: true,
+    optimization: {
+      splitChunks: {
+        name: true,
       },
-    runtimeChunk: true,
+      runtimeChunk: true,
     },
 
-  // Split chunks
-  splitChunks: {
-    layouts: true,
+    // Split chunks
+    splitChunks: {
+      layouts: true,
       pages: true,
-        commons: true,
+      commons: true,
     },
 
-  parallel: process.env.NODE_ENV !== 'production',
+    parallel: process.env.NODE_ENV !== 'production',
 
     extractCSS: process.env.NODE_ENV === 'production',
 
-      // Extend webpack config
-      extend(config, { isDev }): void {
-        config.devtool = isDev ? 'eval-source-map' : false;
-      },
+    // Extend webpack config
+    extend(config, { isDev }): void {
+      config.devtool = isDev ? 'eval-source-map' : false;
+    },
   },
 };
 
