@@ -77,7 +77,7 @@
                       {{ post.excerpt }}
                     </p>
 
-                    <h6 class="text-blue-600 mt-4 font-medium">Ler Mais</h6>
+                    <h6 class="text-blue-800 mt-4 font-medium">Ler Mais</h6>
                   </div>
                 </nuxt-link>
               </div>

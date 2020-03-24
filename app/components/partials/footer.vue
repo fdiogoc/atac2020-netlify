@@ -3,7 +3,8 @@
     <div class="container mx-auto pb-6 flex justify-center">
       <p class="text-white mr-6 mt-1 align-middle inline-block">© 2020 Diogo Fernandes</p>
 
-      <a href="https://github.com/fdiogoc/atac2020-netlify">
+      <a href="https://github.com/fdiogoc/"
+        >Find me:
         <svg
           baseProfile="tiny"
           height="32px"

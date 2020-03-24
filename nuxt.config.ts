@@ -74,7 +74,7 @@ const nuxtConfig: Configuration = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit', '@nuxtjs/sitemap'],
 
   purgeCSS: {
     whitelist: [/.*-(enter|enter-active|enter-to|leave|leave-active|leave-to)/],
@@ -107,6 +107,19 @@ const nuxtConfig: Configuration = {
     icon: {
       iconSrc: `app/static${settings.icon}`,
     },
+  },
+  sitemap: {
+    hostname: 'https://www.escritorioatac.com.br',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: false,
+    exclude: ['/admin/**'],
+    routes: ['/', '/about', '/comunicados', '/comunicados/comunicado-covid19'].map(route => ({
+      url: route,
+      changefreq: 'monthly',
+      priority: 1,
+      lastmodISO: new Date().toISOString().split('T')[0],
+    })),
   },
 
   manifest: {
