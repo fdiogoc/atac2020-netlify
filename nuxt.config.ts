@@ -105,12 +105,12 @@ const nuxtConfig: Configuration = {
   },
   oneSignal: {
     init: {
-      appId: 'YOUR_APP_ID',
+      appId: '3bafad87-66dc-411a-8551-f4811bda77da',
       allowLocalhostAsSecureOrigin: true,
       welcomeNotification: {
-        disable: true
-      }
-    }
+        disable: true,
+      },
+    },
   },
 
   pwa: {
