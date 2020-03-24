@@ -102,6 +102,7 @@ import settings from '@/content/settings/general.json';
           console.log('Push notifications are enabled!');
         } else {
           console.log('Push notifications are not enabled yet.');
+          this.$OneSignal.showSlidedownPrompt();
         }
       });
     });
