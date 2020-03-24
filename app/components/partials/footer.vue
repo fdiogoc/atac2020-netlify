@@ -4,7 +4,7 @@
       <p class="text-white mr-6 mt-1 align-middle inline-block">© 2020 Diogo Fernandes</p>
 
       <a href="https://github.com/fdiogoc/"
-        >Find me:
+        >Me:
         <svg
           baseProfile="tiny"
           height="32px"
@@ -41,5 +41,8 @@ export default class Footer extends Vue {}
 <style lang="scss">
 .footer {
   background-color: $bluise;
+  a {
+    color: white;
+  }
 }
 </style>
