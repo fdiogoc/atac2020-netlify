@@ -1510,6 +1510,11 @@
     jimp-compact "^0.8.0"
     workbox-cdn "^4.3.1"
 
+"@nuxtjs/robots@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.npm.taobao.org/@nuxtjs/robots/download/@nuxtjs/robots-2.4.2.tgz#9a96c91abb70e39b414eec502ef1cf7d5ef0235e"
+  integrity sha1-mpbJGrtw45tBTuxQLvHPfV7wI14=
+
 "@nuxtjs/sitemap@^2.0.1":
   version "2.0.1"
   resolved "https://registry.npm.taobao.org/@nuxtjs/sitemap/download/@nuxtjs/sitemap-2.0.1.tgz#084c2b2bf3ded2b37886507e7ab63021f1b9e3d6"

@@ -74,7 +74,13 @@ const nuxtConfig: Configuration = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/markdownit',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+  ],
 
   purgeCSS: {
     whitelist: [/.*-(enter|enter-active|enter-to|leave|leave-active|leave-to)/],
